@@ -17,7 +17,7 @@
  */
 function addRandomGreeting() {
   const greetings =
-      ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
+      ['"I wish there was a way to know you are in the good old days before you have actually left them." – Andy Bernard, The Office', '“If you look for the light you will often find it. But if you look for the dark, it is all you will ever see.” – Iroh, The Legend of Korra', '“Worrying means you suffer twice.”—Fantastic Beasts', '“Believe in yourselves. Dream. Try. Do good.”—Boy Meets World'];
 
   // Pick a random greeting.
   const greeting = greetings[Math.floor(Math.random() * greetings.length)];
