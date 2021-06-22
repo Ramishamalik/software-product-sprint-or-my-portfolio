@@ -35,3 +35,19 @@ async function showServerExperience() {
   const myExperience = document.getElementById('my-experience');
   myExperience.innerText = textFromResponse;
 }
+
+//Funtion not working
+/** 
+async function getFactsServlet(){
+    // Send a request to /randomFunFacts.
+    const responseFromServer = await fetch('/randomFunFacts');
+    const randomFunFacts = await responseFromServer.json();
+
+    const randomFunFacts = document.getElementById('facts-container');
+    randomFunFacts.innerHTML = '';
+
+    console.log(randomFunFacts);}
+
+
+
+*/
