@@ -5,7 +5,6 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-    <script src="script1.js"></script>
   </head>
   <body>
       
@@ -32,6 +31,25 @@
 
       <p>Click <a href="/hello">here</a> to see content created by server code.</p>      
       
+      <body>
+        <h1>Translation</h1>
+        <p>Type a message and select a language, then click submit to translate it.</p>
+          
+        <textarea id="text"></textarea>
+
+        <select id="language">
+            <option value="es">English</option>
+            <option value="zh">Chinese</option>
+            <option value="es">Spanish</option>
+            <option value="hi">Hindi</option>
+            <option value="ar">Arabic</option>
+        </select>
+
+        <button onclick="requestTranslation();">Translate</button>
+
+        <hr/>
+        <div id="result"></div>
+        </body>
 
 
      <!-- 

@@ -23,11 +23,11 @@ public class FactsServlet extends HttpServlet {
       randomFunFacts.add("Chewing gum boosts concentration.");
       randomFunFacts.add("The first computer was invented in the 1940s.");
   }
+}
+  
 
-
-    /**
-     * Converts a ServerStats instance into a JSON string using the Gson library.
-     */
+     /// Converts a ServerStats instance into a JSON string using the Gson library.
+     
 /** 
   private String convertToJsonUsingGson(final ArrayList<String> list) {
     final Gson gson = new Gson();
@@ -35,3 +35,4 @@ public class FactsServlet extends HttpServlet {
     return json;
   }
 }*/
+   
