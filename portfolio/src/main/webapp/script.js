@@ -17,7 +17,7 @@
  */
 function addRandomGreeting() {
   const greetings =
-      ['"I wish there was a way to know you are in the good old days before you have actually left them." – Andy Bernard, The Office', '“If you look for the light you will often find it. But if you look for the dark, it is all you will ever see.” – Iroh, The Legend of Korra', '“Worrying means you suffer twice.”—Fantastic Beasts', '“Believe in yourselves. Dream. Try. Do good.”—Boy Meets World'];
+      ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
 
   // Pick a random greeting.
   const greeting = greetings[Math.floor(Math.random() * greetings.length)];
@@ -26,48 +26,3 @@ function addRandomGreeting() {
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = greeting;
 }
-
-/** Fetches the current date from the server and adds it to the page. */
-async function showServerExperience() {
-  const responseFromServer = await fetch('/fetch');
-  const textFromResponse = await responseFromServer.text();
-
-  const myExperience = document.getElementById('my-experience');
-  myExperience.innerText = textFromResponse;
-}
-
-function requestTranslation() {
-    const text = document.getElementById('text').value;
-    const languageCode = document.getElementById('language').value;
-
-    const resultContainer = document.getElementById('result');
-    resultContainer.innerText = 'Loading...';
-
-    const params = new URLSearchParams();
-    params.append('text', text);
-    params.append('languageCode', languageCode);
-
-    fetch('/translate', {
-        method: 'POST',
-        body: params
-    }).then(response => response.text())
-    .then((translatedMessage) => {
-        resultContainer.innerText = translatedMessage;
-    });
-    }
-
-//Funtion not working
-/** 
-async function getFactsServlet(){
-    // Send a request to /randomFunFacts.
-    const responseFromServer = await fetch('/randomFunFacts');
-    const randomFunFacts = await responseFromServer.json();
-
-    const randomFunFacts = document.getElementById('facts-container');
-    randomFunFacts.innerHTML = '';
-
-    console.log(randomFunFacts);}
-
-
-
-*/

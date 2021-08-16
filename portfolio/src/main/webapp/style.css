@@ -1,33 +1,9 @@
 #content {
   margin-left: auto;
   margin-right: auto;
-  width: 850px;
+  width: 650px;
 }
-
-h1{
-  background-color: rgb(250, 174, 224);
-}
-
-
-
-div {
-    text-align: center;
-  background-color: rgb(250, 230, 242);
-}
-
 
 #greeting-container {
-  margin-top: 50px;
+  margin-top: 20px;
 }
-
-
-#text {
-    width: 500px;
-    height: 125px;
-    }
-
-#language {
-    display: block;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    }
